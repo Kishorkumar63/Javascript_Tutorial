@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 5px solid black;
+}
+.flex-item {
+  color: white;
+  font-size: 18px;
+  padding: 16px;
+  text-align: center;
+}
+.box-1 {
+  background-color: red;
+}
+.box-2 {
+  background-color: rgb(125, 64, 9);
+}
+.box-3 {
+  background-color: rgb(210, 229, 0);
+}
+.box-4 {
+  background-color: rgb(23, 0, 229);
+}
+.box-5 {
+  background-color: rgb(225, 0, 229);
+}
+.box-6 {
+  background-color: rgb(0, 214, 229);
+}
+.box-7 {
+  background-color: rgb(0, 229, 15);
+}
+.box-7 {
+  background-color: rgb(229, 0, 80);
+}
+.box-8 {
+  background-color: rgb(76, 75, 75);
+}
+.box-9 {
+  background-color: rgb(61, 133, 227);
+}
+
+/* ====================================== */
+/* .container{
+    display:inline-flex;
+    display:flex;
+    flex-direction:row-reverse;
+
+} */
+/* .container{
+    display:inline-flex;
+    display:flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    } */
+
+/* .container {
+  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+
+  height: 400px;
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
+} */
+
+/* flex-flow = flex-directio+flex-wrap */
+
+/* .container {
+    display: inline-flex;
+    display: flex;
+    height: 400px;
+    flex-flow: column wrap;
+    flex-flow: column wrap-reverse;
+    flex-flow: row wrap-reverse;
+    flex-flow: row wrap-reverse;
+  } */
+
+/* Gap */
+
+/* .container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    gap: 20px;
+  } */
+
+/* Justify Content  Y-Axis 
+  row Main-Axis=>X
+  column Main-Axis=>Y
+  
+  */
+
+/* .container{
+    display: flex;
+    flex-direction: row;
+   justify-content:flex-end;
+   justify-content:flex-start;
+   justify-content:center;
+   justify-content:space-around;
+   justify-content:space-between;
+   justify-content:space-evenly;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  } */
+
+/* Align-item Y-Axis =>cross-Axis 
+
+row Main-Axis=>Y
+  column Main-Axis=>X
+
+
+*/
+
+/* .container {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  align-items: stretch;
+  align-items: flex-end;
+  align-items: flex-start;
+  align-items: center;
+  align-items: baseline;
+}
+
+.box-1 {
+  font-size: 45px;
+} */
+
+/* .container {
+    display: flex;
+    flex-direction:column;
+    height: 600px;
+    align-items: stretch;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: center;
+    align-items: baseline;
+  }
+
+  .box-1 {
+    font-size: 45px;
+  } */
+
+/* Align-Content */
+
+/* .container {
+  display: flex;
+
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: center; 
+
+  align-content: stretch;
+  align-content: center;
+  align-content: space-around;
+  align-content: space-between;
+  align-content: space-around;
+} */
+
+/* order */
+/* .container {
+    display: flex;}
+
+
+    .box-2{
+        order: 1;
+    }
+    .box-3{
+        order: 2;
+    }
+    .box-4{
+        order: 5;
+    }
+    .box-4{
+        order: 3;
+    }
+    .box-5{
+        order: 4;
+    } */
+
+/* Flex-Grow  default-value=0*/
+
+/* .container {
+        display: flex;}
+
+        .box-2{
+            flex-grow: 1;
+        }
+        .box-4{
+            flex-grow: 4;
+        }
+
+        .flex-item{
+            flex-grow: 2;
+        } */
+
+/* Flex-Shrink => decrease Size */
+
+/* .container {
+    display: flex;}
+.flex-item{
+    flex-shrink: 0;
+    width: 100px;
+}
+.box-4{
+    flex-shrink: 6;
+
+} */
+
+
+
+/* Flex-basics  value=px,% */
+
+/* .container {
+    display: flex;} */
+    /* .flex-item{ */
+        /* width: 100px; */
+  /* default value     flex-basis: auto; */
+    /* }
+    .box-1{
+
+        flex-basis: 400px;
+        flex-grow: 3;
+    } */
+
+
+    /* Flex=>ShortEnd=flex-grow,flex-shrink,flex-basics */
+
+    /* .container {
+        display: flex;}
+
+        .box-1{
+flex:   0 1 auto;
+flex:   0 1 200px;
+flex:   0 1 200px;
+        } */
+
+
+        /* align-self */
+
+        
+        /* .container {
+            display: flex;
+            height: 600px;
+            align-items: stretch;
+        
+        }
+        .box-1{
+            align-self: self-start;
+        }
+        .box-2{
+            align-self: self-end;
+        }
+        .box-3{
+            align-self: stretch;
+        }
+        .box-5{
+            align-self: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            align-items: stretch;
+        
+        }
+        .box-1{
+            align-self: self-start;
+        }
+        .box-2{
+            align-self: self-end;
+        }
+        .box-3{
+            align-self: stretch;
+        }
+        .box-5{
+            align-self: center;
+        }
+ */
