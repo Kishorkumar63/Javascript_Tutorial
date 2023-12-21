@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    border: 5px solid black;
+    margin: 20px;
+  }
+  .grid-item {
+    color: white;
+    font-size: 18px;
+    padding: 16px;
+    text-align: center;
+  }
+  .box-1 {
+    background-color: red;
+  }
+  .box-2 {
+    background-color: rgb(125, 64, 9);
+  }
+  .box-3 {
+    background-color: rgb(210, 229, 0);
+  }
+  .box-4 {
+    background-color: rgb(23, 0, 229);
+  }
+  .box-5 {
+    background-color: rgb(225, 0, 229);
+  }
+  .box-6 {
+    background-color: rgb(0, 214, 229);
+  }
+  .box-7 {
+    background-color: rgb(0, 229, 15);
+  }
+  .box-7 {
+    background-color: rgb(229, 0, 80);
+  }
+  .box-8 {
+    background-color: rgb(76, 75, 75);
+  }
+  .box-9 {
+    background-color: rgb(61, 133, 227);
+  }
+
+  /*===============================Display Grid=============*/
+
+  /* .container{
+    display: grid;
+    display: inline-grid;
+    grid-template-columns: 100px 200px 300px;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns:repeat(3,200px);
+    grid-template-columns:repeat(3,200px)300px;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(3, minmax(200px,1fr))
+    
+    
+
+  } */
+
+
+/* =================================Grid-template-row===================== */
+                /* Compulsory height for design the row grid */
+/* .container{
+    display: grid;
+    height: 600px;
+    grid-template-columns:repeat(3, minmax(200px,1fr));
+
+
+    grid-template-rows: 100px 200px   300px;
+    grid-template-rows: repeat(2,1fr);
+
+    
+    
+
+  } */
+
+
+  /* ==============================Grid-template =======================*/
+    /* Shorthand Property    => grid-template=grid-template-rows / grid-template-columns*/
+
+
+    .container{
+        display: grid;
+        height: 600px;
+        grid-template:repeat(2,1fr)/repeat(3,1fr) ;
+       
+    
+    
+    
+        
+        
+    
+      }
