@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="LocalStorageArray.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CRUD With LocalStorageArray</h1>
+      <p>1.convert Array to strings using <mark>JSON.stringify()</mark> before storing</p>
+      <p>2.convert them back to their original form using <mark>JSON.parse()</mark> after retrieving.</p>
+      <hr />
+      <form action="" id="data-from">
+        <label for="dataInput">Enter Data</label>
+        <input type="text" id="dataInput" />
+        <button class="btn" type="submit">Submit</button>
+
+        <div id="output">
+          <h2>Store</h2>
+          <ul id="dataList">
+            <li>
+              <div class="edit-delete-button">
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+
+    <script src="LocalStorageArray.js"></script>
+  </body>
+</html>
