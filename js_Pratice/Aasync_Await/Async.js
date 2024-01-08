@@ -9,7 +9,7 @@
 
 // welcome().then(res=>console.log(res)).catch(err=>console.log(err))
 
-//---------------------------------------------
+//------------ ---------------------------------
 
 // async function getData() {
 //   let blogPost = new Promise((resolve, reject) => {

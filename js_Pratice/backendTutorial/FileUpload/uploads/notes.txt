@@ -1,0 +1,28 @@
+1.destination:(req,file,cb)=>{
+cb(null,"/uploads")
+     }
+     or
+2.destination:"/uploads",
+
+
+
+ 3.filename:(req,file,cb)=>{                            // it canbe Extract name like png ,jpg,svg
+                                                      //  file.originalname  is take original name of file name  
+                                                      //file.fieldname is take name of input attribute name       
+                cb(null,file.fieldname+"_"+Date.now()+path.extname(file.originalname))
+            }
+
+
+let maxSizex = 10 * 1000 * 1000;
+4.limits: {     //size of file name
+    fieldSize: maxSizex,
+  },            
+
+5. fileFilter: function (req, file, cb) {
+    let fileTypes = /jpeg|jpg|png/;
+                   //check the File type  jpeg,jpg,png
+    let mimeType = fileTypes.test(file.mimetype);
+                  //take extension fo the filename
+    let extname = fileTypes.test(path.extname(file.originalname).toLowerCase());
+  },
+

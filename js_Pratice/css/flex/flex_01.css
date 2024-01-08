@@ -47,8 +47,9 @@
 
 /* ====================================== */
 /* .container{
-    display:inline-flex;
+ 
     display:flex;
+    display:inline-flex;
     flex-direction:row-reverse;
 
 } */
@@ -106,8 +107,8 @@
    justify-content:space-around;
    justify-content:space-between;
    justify-content:space-evenly;
-  }
-  .container{
+  } */
+  /* .container{
     display: flex;
     flex-direction: column;
     height: 600px;

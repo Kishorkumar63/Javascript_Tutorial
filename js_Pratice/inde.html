@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Table Example</title>
+</head>
+<body>
+
+<input type="text" id="nameInput" placeholder="Name">
+<input type="text" id="genderInput" placeholder="Gender">
+<input type="text" id="domainInput" placeholder="Domain">
+<button onclick="listData()">Add Data</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Domain</th>
+      <th>Delete</th>
+      <th>Update</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+    <!-- Data will be added here -->
+  </tbody>
+</table>
+
+<script>
+function listData() {
+  const nameValue = document.getElementById('nameInput').value;
+  const genderValue = document.getElementById('genderInput').value;
+  const domainValue = document.getElementById('domainInput').value;
+  
+  const data = `<tr>
+    <td>${nameValue}</td>
+    <td>${genderValue}</td>
+    <td>${domainValue}</td>
+    <td><button class="delete-btn">Delete</button></td>
+    <td><button class="update-btn">Update</button></td>
+  </tr>`;
+
+  const tbody = document.getElementById('tbody');
+  tbody.innerHTML += data;
+
+  // Adding event listeners after adding elements to the DOM
+  const deleteButtons = document.querySelectorAll(".delete-btn");
+  deleteButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      btn.parentElement.parentElement.remove();
+    });
+  });
+
+  const updateButtons = document.querySelectorAll(".update-btn");
+  updateButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const row = btn.parentElement.parentElement;
+      console.log(row);
+      const cells = row.querySelectorAll("td");
+      
+      // Get data from the row cells
+      const name = cells[0].textContent;
+      const gender = cells[1].textContent;
+      const domain = cells[2].textContent;
+      
+      // Fill input fields with row data for updating
+      document.getElementById('nameInput').value = name;
+      document.getElementById('genderInput').value = gender;
+      document.getElementById('domainInput').value = domain;
+      
+      // Remove the updated row after data is filled (you may need to implement an update functionality here)
+      row.remove();
+    });
+  });
+}
+</script>
+
+</body>
+</html>

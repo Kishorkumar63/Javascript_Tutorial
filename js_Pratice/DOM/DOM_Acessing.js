@@ -18,7 +18,7 @@ brand.style.backgroundColor = "pink";
 let stitle = document.getElementsByClassName("sub-title");
 console.log(stitle);
 
-// It Ouccur Erro =>  stitle.style.color="red"
+// It Ouccur Error =>  stitle.style.color="red"
 
 // Not Use forEach() Loop In HTML COLLECTION
 // stitle.forEach(element => {
@@ -68,21 +68,21 @@ console.log(Qpara);
 // console.log(lst);
 // console.log(lst.length);
 // const li=document.createElement("li")
-// li.innerHTML="Kishor kumar"
-// li.style.backgroundColor="skyblue"
-// lst[0].parentElement.appendChild(li)
+//  li.innerHTML="Kishor kumar"
+//  li.style.backgroundColor="skyblue"
+//  lst[0].parentElement.appendChild(li)
 // console.log(lst.length);
 // console.log(lst);
 
 //=========================================== NodeList are static Eg ================================
 
-// const list=document.querySelectorAll("li")
+//  const list=document.querySelectorAll("li")
 
-// console.log(list);
-// console.log(list.length);
+//  console.log(list);
+//   console.log(list.length);
 // const li=document.createElement("li")
 // li.innerHTML="DOM EG"
 // li.style.backgroundColor="skyblue"
 // list[0].parentElement.appendChild(li)
-// console.log(list.length);
-// console.log(list);
+// // console.log(list.length);
+// // console.log(list);
