@@ -1,0 +1,179 @@
+* {
+  padding: 0%;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Simple Transition */
+/* .box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: 0.5s;
+}
+.box:hover{
+    transition: 1s;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    border-radius: 50%;
+} */
+
+/* ========================================Translate && Rotate=========================== */
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition: 0.5s;
+}
+/* .box:hover{
+    transition: 1s;
+    transform: translateX(100px);
+    transform: translateX(-100px);
+    transform: translateY(100px);
+    transform: translateY(-100px);
+    /* transform: translateZ(-100px); It used 3D Effect*/
+
+/* It act as cross method I */
+/* X,Y */
+/* transform: translate(100px,200px);
+    transform: translate(-100px,200px);
+    transform: translate(100px,-200px);
+    transform: translate(-100px,-200px);
+}  */
+
+/*    =========================Rotated==================           */
+/* Rotate % types */
+/* It Value Like deg  =>300deg */
+/* .box:hover{
+    transition: 1s;
+    transform: rotateX(360deg);
+    transform: rotateX(-360deg);
+    transform: rotateY(360deg);
+    transform: rotateY(-360deg);
+    transform: rotateZ(360deg);
+    transform: rotateZ(-360deg);
+    /* It Similar to rotateZ() */
+/* transform: rotate(360deg);
+
+    
+ 
+} */
+
+/* ===================================Scale====================== */
+/* Scale Deafult value 1 */
+/* scaleZ() in 3d */
+/* .box:hover{
+    transition: 1s;
+    transform: scaleX(2);
+    transform: scaleX(-6);
+    transform: scaleY(2);
+    transform: scaleY(-6);
+    transform: scale(4);
+    transform: scale(4,3);
+} */
+
+/* ===================================Skew==================== */
+/* skew  3 Types */
+/* skew value deg =>10deg */
+
+/* .box:hover{
+
+    transition: 1s; 
+    transform: skewX(60deg);
+    transform: skewX(-60deg);
+    transform: skewY(60deg);
+    transform: skewY(-60deg);
+    transform: skew(10deg,30deg);
+} */
+
+/* =============================animation keyframes==================== */
+
+/*  animation: box; or  animation-name: box; */
+/*  animation-delay: 3s;  after 3second it work animation */
+/*  animation-iteration-count: 2;  how many Time animation work*/
+/* animation-iteration-count: infinite; it work in linear time */
+/*  animation-direction: alternate; */
+/*     animation-direction: alternate-reverse;   It work the Animation opposite side */
+/*     animation-timing-function:ease ;  start slow, slow go ,solow go,fast end*/
+/*     animation-timing-function:ease-out ; start fast ,end slow*/
+/*     animation-timing-function:ease-in-out ; start slow ,end slow*/
+
+/* Shortant property animation:box 5s linear infinit */
+/* .box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition: 0.5s;
+  animation: box;
+  animation-duration: 5s;
+  animation-delay: 3s;
+  animation-iteration-count: 2;
+
+  animation-timing-function: ease;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in;
+  animation-timing-function: linear;
+} */
+
+/* @keyframes box {
+    from{
+/* transform: translate(500px); */
+/* transform: translateX(-500px) rotate(600deg) translateY(150px) skew(80deg);
+    }
+    to{
+        transform: translateX(500px) ;
+    }
+} */
+
+/* @keyframes box {
+  0% {
+    transform: translateX(500px) rotate(600deg);
+  }
+  50% {
+    transform: translateY(500px) rotate(-600deg);
+  }
+  75% {
+    transform: translateX(-500px) rotate(600deg);
+  }
+  100% {
+    transform: translateY(-500px) rotate(-600deg);
+  }
+} */
+
+/* ================================prepesitive====================== */
+/* perspective() 3d effect*/
+/* px value decrease means it will increase 3d effect */
+/* px value increase means it will decrease 3d effect */
+
+/* .box{
+    transition: 1s;
+    transform:  perspective(100px) rotateY(50deg);
+} */
+
+
+/* ===============================More animation=========================== */
+
+/* transform-origin is a paste The Position  */
+/* .box{
+    transform-origin: left;
+    transform-origin: right;
+    transform-origin: top;
+    transform-origin: bottom;
+}
+.box:hover{
+    transition: 1s;
+    transform-origin: top;
+    transform: perspective(100px) rotateY(-180deg);
+
+} */
+
+
