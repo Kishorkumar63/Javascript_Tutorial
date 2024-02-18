@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.main{
+display: flex;
+align-items: center;
+background-color: aqua;
+height: 50px;
+}
+.main .nav ul li{
+    display: inline-block; 
+    padding: 20px;
+    position: relative;
+}
+.main .nav ul li a{
+    width: 100%;
+}
+.main .nav ul li  ul{
+    position: absolute;
+    display: none;
+    background-color: burlywood;
+}
+.main .nav ul li:hover > ul,.main .nav ul li:focus-within > ul{
+    display: block;
+}
+.main .nav ul li:hover ul li{
+    width: 100%;
+    background-color: blue;
+}
+@media (max-width:800px)
+{
+    .main .nav 
+    {
+        position: absolute;
+        top: 50px;
+        background-color: brown;
+        width: 100%;
+    }  
+    .main .nav ul li{
+        position: relative;
+         width: 100%; 
+    }
+    .main .nav ul li ul{
+     width: 100%; 
+        left:0;
+    }
+    .main .nav ul li ul li:hover{
+        background-color: red;
+    }
+    /* .main .nav ul li ul li a{
+       
+        display: block;
+        width: 100%;
+        left: 0;
+    } */
+}

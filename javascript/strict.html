@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=20;
+        b="20";
+        console.log(a==b);
+        console.log(a===b);
+
+        let user={
+            name:"kishor",
+            age:18,
+            gender:"male",
+            city:"chennai"
+        }
+        for(let prop in user)
+        {
+            console.log(prop+" : "+user[prop]);
+        }
+
+        c="kishor";
+        console.log(c);
+        c+="kumar";
+        console.log(c);
+        fname="kishor";
+        var d=fname.toUpperCase();
+        console.log(d);
+        var k=fname.indexOf("i")
+        console.log(k);
+        v=fname.lastIndexOf("r");
+        console.log(v);
+        o="kishpr";
+        var l=o.charAt(2);
+        console.log(l);
+        var l=o.charCodeAt(2);
+        console.log(l);
+    </script>
+</body>
+</html>

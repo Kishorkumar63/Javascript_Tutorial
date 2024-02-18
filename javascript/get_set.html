@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /* object literal
+           class   
+        */
+    /*   const person={
+        fname:"kishor",
+        lname:"kuamr",
+     get   fullname()
+        {
+            return this.fname+" "+this.lname;
+        },
+        set fullname(name)
+        {
+parts=name.split(" ")
+this.fname=parts[0];
+this.lname=parts[1];
+
+        }
+       }
+       console.log(person.fullname);
+             person.fullname="rajesh kuamr";
+            
+             console.log(person.fullname);*/
+
+             class person{
+                constructor(fname,lname)
+                {
+                    this.fname=fname;
+                    this.lname=lname;
+                }
+                fullname()
+                {
+                    return this.fname+" "+this.lname;
+                }
+                get   fullname()
+        {
+            return this.fname+" "+this.lname;
+        }
+        set fullname(name)
+        {
+parts=name.split(" ")
+this.fname=parts[0];
+this.lname=parts[1];
+
+        }
+             }
+          const   p=new person("kishor ","kuamr")
+       console.log(p);
+       console.log(p.fullname);
+       p.fullname="kk kumar";
+       console.log(p.fullname);
+       </script>
+</body>
+</html>

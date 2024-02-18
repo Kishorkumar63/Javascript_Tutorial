@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kkS</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        font-size: 2rem;
+    }
+</style>
+<body>
+    
+    <script>
+let kk={
+    name:"kishor",
+    age:19,
+    gender:"male",
+    class:"poor",
+    add:{
+dt:"cudd",
+pin:1010,
+
+    }
+}
+document.write("<h1>"+kk.age+"<br>"+kk.class +"<br>"+kk["gender"]+"</h1>")
+document.write("<h1>"+Object.keys(kk.add)+"</h1>");
+document.write("<h1>"+Object.values(kk)+"</h1>");
+
+    </script>
+</body>
+</html>

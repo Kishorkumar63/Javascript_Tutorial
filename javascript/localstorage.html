@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <input type="text" placeholder="entert ">
+    <button type="submit">Submit</button>
+</form>
+    <div>
+
+    </div>
+    <script>
+        const input=document.querySelector("input");
+        const btn=document.querySelector("button");
+        const div=document.querySelector("div")
+
+        btn.addEventListener("click",(e)=>{
+            e.preventDefault()
+            if(input.value==="")
+            {
+                alert("enter the Text")
+            }
+            else{
+                const p=document.createElement("p")
+                p.innerHTML=input.value
+                const fext=   p.innerHTML
+                div.append(p)
+                input.value=""
+               
+            }
+            const ret=JSON.parse(localStorage.getItem("Data"))||[]
+            ret.forEach(element => {
+                const p=document.createElement("p")
+                p.innerHTML=element
+                div.append(p)
+
+            });
+        })
+    </script>
+</body>
+</html>

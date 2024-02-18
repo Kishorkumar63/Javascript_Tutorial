@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+.con{
+    position: relative;
+}
+.slider{
+    max-width: 800px;
+    height: 400px;
+    /* overflow: hidden; */
+    position: relative;
+}
+.slider img{
+    width: 100%;
+}
+.slider-item,.hidden{
+    display: none;
+}
+ .active{
+    display: block;
+} 
+.slider-btn{
+
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-btn button{
+    cursor: pointer;
+    padding: 5px;
+  
+}
+.dots{
+    background-color: red;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.dots .dot{
+    height:10px;
+    width: 50px;
+    background-color: black;
+    cursor: pointer;
+
+}
+.dots .dot.dot-active{
+    background-color: aliceblue;
+}

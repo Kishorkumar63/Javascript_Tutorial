@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+   
+    scroll-behavior: smooth;
+}
+
+.main{
+    background-color:#341f97;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+.main h2{
+    color: rgb(250, 250, 251);
+    cursor: pointer;
+    margin-left: 5%;
+}
+.main h2:hover{
+    color:#7efff5;
+}
+.main nav li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.main nav li a{
+    color: aliceblue;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.main nav li a:hover{
+    color:#7efff5;
+    
+    border-bottom: hotpink 3px solid;
+    
+}
+.box{
+    height: 100vh    ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    
+}
+.box:hover{
+    background-image: linear-gradient(to right top, #6bd1cb, #5bccd6, #54c5e0, #5abee7, #6ab5ea, #59baf2, #40bff9, #00c4ff, #00d8fe, #00e9e0, #00f5a9, #5ffb60);
+}
+.box .h{
+background-color: rgba(0, 0, 0, 0.288);
+width: 100%;
+text-align: center;
+height: 40px;
+}
+.box .h h2{
+    line-height:40px ;
+    cursor: pointer;
+    user-select: none;
+}
+.box .h h2 span
+{
+    color: #fff200;
+   font-family:Arial, Helvetica, sans-serif;
+   cursor: pointer;
+    user-select: none;
+    margin: 2px;
+}
+.box button{
+    margin-top: 25px;
+    width: 10%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.337);
+    background-color: #ff9f1a;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+.box .hh {
+    margin-top: 40px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+}
+.box .hh .kk ,.gg{
+    background: -webkit-linear-gradient(rgb(255, 221, 0),rgb(0, 255, 247));
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px;
+}
+.box .hh .gg
+{
+    background: -webkit-linear-gradient(rgb(158, 255, 105),rgb(255, 238, 0));
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px;
+}
+.box .q{
+    margin-top: 30px;
+    padding: 10px;margin-left: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: -webkit-linear-gradient(tomato,pink);
+}
+@media (max-width:800px)
+{
+    .box .q {
+width: 100%;
+    }
+
+}

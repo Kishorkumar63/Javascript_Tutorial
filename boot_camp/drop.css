@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{text-decoration: none;}
+ul li{
+    list-style: none;
+}
+.main{
+    background-color: red;
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    text-transform: uppercase;
+    color: cadetblue;
+    font-size: 20px;
+    cursor: pointer;  
+}
+.right{
+    display: flex;
+    gap: 25px;
+}
+.right li a{
+    color: white;
+}
+button{
+    border: none;
+    background: none;
+}
+button span{
+   display: block;
+   width: 100%; 
+}

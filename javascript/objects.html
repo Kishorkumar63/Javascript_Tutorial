@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*FOUR TYPES TO BE CREATE OBJECT IN JS;
+        1. USING OBJECT LITERALS;
+        2.USING OBJECT CONSTRUCTOR
+        3.USING THE OBJECT.CREATE() METHOD;
+        4.USING CLASS*/
+
+        /*  1. USING OBJECT LITERALS;*/
+        const user={
+            name:"kishor",
+            age:19,
+            gender:"male"
+        };
+        console.log(user);
+
+        /*   2.USING OBJECT CONSTRUCTOR*/
+        const person=new Object();
+        person.job="web developer";
+        person.salary="100000";
+        console.log(person);
+
+      /*  3.USING THE OBJECT.CREATE() METHOD;*/
+
+
+      const personer={
+        kk:function()
+        {
+            console.log(this.names);
+        }
+      }
+      const per=Object.create(personer);
+      per.names="kishor"
+      per.jobs="web devloper"
+per.kk();
+/*  4.USING CLASS
+
+*/
+class users{
+    constructor(name,age,gender)
+    {
+        this.name=name;
+        this.age=age;
+    }
+}
+    </script>
+</body>
+</html>

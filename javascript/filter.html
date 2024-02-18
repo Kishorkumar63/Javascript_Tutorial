@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numberes = [90, 78, 67, 56, 23];
+        let evennum = numberes.filter((num) => num % 2 == 0);
+        document.write(evennum);
+        let users = [
+        { name: "alice", age: 30 },
+        { name: "kuamr", age: 18 },
+        { name: "ram", age: 20 },
+        { name: "kishor", age: 19 } 
+    ]
+    let usern=users.filter((user)=>user.age>=20);
+    console.log(usern);
+    let names=["kishor","cat","rat","doo","drong"];
+    let an=names.filter(name=>name.length===3);
+    console.log(an);
+    
+    </script>
+</body>
+
+</html>

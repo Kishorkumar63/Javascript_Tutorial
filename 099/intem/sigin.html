@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>#login{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #login .in{
+        padding: 30px;
+        background-color: white;
+        min-height: 300px;
+        min-width: 300px;
+        border-radius: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        box-shadow: #000000fe 0px 2px 4px, rgba(0, 0, 0, 0.839) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+    #login .in h1{
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 2rem;
+        font-family:monospace;
+        color: skyblue;
+    }
+    #login .in .input{
+      
+        margin-bottom: 25px;
+        position: relative;
+    
+    
+    }
+    #login .in .input input{
+     position: relative;
+     padding: 10px;
+     border-radius: 5px;
+     width: 100%;
+    }
+    #login .in .input .lab{
+       position: absolute;
+       font-size: 1.1rem;
+        color: rgb(0, 0, 0);
+        left: 14px;
+        top:12px;
+        position: absolute;
+        transition: 0.5s;
+        
+    }
+    #login .in .input input:focus{
+        border: rgb(94, 218, 252) 2px solid;
+    }
+    #login .in .input input:focus ~ .lab{
+        top:-9px;
+        transition: 0.5s;
+        background-color: white;
+        color: rgb(0, 153, 255);
+      
+    }
+    #login .in  .input input:not(:focus):valid + .lab{
+        top:-9px;
+        transition: 0.5s;
+        background-color: white;
+        color: rgb(0, 153, 255);
+    }
+    #login .in form  .btn{
+       text-align: center;
+    }
+    #login .in form  .btn button{
+        color: black;
+        font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }  
+    #login .in form  .btn button:hover{
+        background-color: #8fadc8;
+        transition: 1s;
+        border: red solid 2px;
+    }
+    
+    </style>
+</head>
+<body>
+    <section id="login">
+        <div class="in">
+            <h1>Login</h1>
+            <form action=""  method="post">
+                <div class="input">
+                    <input type="email" name="mail" required id="oo" data-aos="fade-right" data-aos-duration="2500">
+                    <label for="oo" class="lab" data-aos="fade-right" data-aos-duration="2500">Email</label>
+                </div>
+                <div class="input" >
+                    <input type="email" name="mail" required id="oo" data-aos="fade-right" data-aos-duration="2500">
+                    <label for="oo" class="lab" data-aos="fade-right" data-aos-duration="2500">Aagin-Mail</label>
+                </div>
+                <div class="input">
+                    <input type="password" name="pass" required id="oo" data-aos="fade-right" data-aos-duration="2500">
+                    <label for="oo" class="lab" data-aos="fade-right" data-aos-duration="2500">Password</label>
+                </div>
+                <div class="input">
+                    <input type="password" name="pass" required id="oo" data-aos="fade-right" data-aos-duration="2500">
+                    <label for="oo" class="lab" data-aos="fade-right" data-aos-duration="2500">Password</label>
+                </div>
+              <div class="btn">
+                <button >Submit</button>
+            </div>
+            </form>
+        </div>
+        </section>
+           
+</body>
+</html>

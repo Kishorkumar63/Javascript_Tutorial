@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-color: rgb(221, 221, 221);
+
+}
+
+.main {
+    display: flex;
+    background-color: #001427;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+
+    height: 60px;
+
+}
+
+.ser {
+    
+    text-align: center;
+
+    display: flex;
+    padding: 20px;
+    justify-content:space-between;
+
+}
+
+.ser .ser-in {
+
+    width: 350px;
+
+    text-align: center;
+
+}
+
+.ser .ser-in input {
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+   position: relative;
+    outline: none;
+    background-color: white;
+
+}
+
+input::placeholder {
+    color: black;
+    font-size: 1.1rem;
+    width: 150px;
+  
+
+}
+
+/* .ser .ser-in h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("images/pop02.jpg");
+    background-clip: "image";
+    color: #780000;
+} */
+.ser .ser-in label{
+    position: absolute;
+
+}
+.ser .ser-in-in{
+
+    width: 150px;
+    
+  
+}
+
+.ser .ser-in-in button {
+    padding: 5px;
+    border-radius: 30px;
+    width: 100%;
+    color: black;
+    font-weight: 600;
+    margin-right: 30px;
+    border: none;
+background-color: white;
+    outline: none;
+
+}
+
+
+.main nav ul li {
+    padding: 20px;
+    font-style: italic;
+    display: inline-block;
+}
+
+.main nav ul li a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.add-cont {
+
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-cont .count {
+    position: absolute;
+    z-index: 9;
+    font-size: 17px;
+    font-weight: 150;
+    font-size: 15px;
+    top: 0;
+    color: white;
+background-color: green;
+padding: 1.5px;
+    border-radius: 50px;
+    left: 22px;
+    overflow: hidden;
+
+}
+
+#all{
+   background-attachment: fixed;
+}
+#veg {
+    height: 100vh;
+}
+
+ .add-cont ion-icon {
+   color: floralwhite;
+
+    font-size: 1.9rem;
+
+    color: rgb(0, 0, 0);
+}
+
+.ham {
+    cursor: pointer;
+    display: none;
+
+}
+
+.ham .li {
+    background-color: #ffffff;
+    height: 3px;
+    width: 40px;
+    border-radius: 6px;
+    display: block;
+    margin-top: 4px;
+}
+
+ .ee.slide .ham{
+    opacity: 0;
+}
+
+.main .side-cart {
+    z-index: 90;
+    background-color: #2a6f97;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    right: 0;
+    top: 0px;
+    text-align: center;
+    height: 100vh;
+    position: fixed;
+    width: 310px;
+    right: -100%;
+    transition: 1.5s;
+}
+
+.main .side-cart.co {
+    transition: 1s;
+    right: 0px;
+}
+
+.main .side-cart h2 {
+
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: #fefae0;
+    border-bottom: 2px goldenrod solid;
+}
+
+.main .side-cart .oo {
+
+    position: absolute;
+    top: 2.5px;
+    right: 0;
+    background-color: black;
+    cursor: pointer;
+}
+
+.side-cart .product-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin-top: 30px;
+    height: 100px;
+
+    background-color: white;
+    padding: 10px;
+}
+
+.side-cart .product-cart .product-image {
+    width: 500px;
+
+
+
+    /* border: 2px black solid; */
+
+}
+
+.side-cart .product-cart .product-image img {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border-radius: 20px;
+    height: auto;
+    transition: 0.5s;
+}
+
+.side-cart .product-cart .product-image img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+.side-cart .product-cart .rate {
+    /* background-color: #ae3400; */
+    padding: 10px;
+}
+
+.side-cart .product-cart .rate h3 {
+    margin-bottom: 5px;
+}
+
+.side-cart .product-cart .rate #in {
+
+    padding: 2px;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 40px;
+}
+
+.main .side-cart .overlay {
+    /* background-color:rgba(0, 0, 0, 0.839) ; */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -9;
+
+}
+
+.conatiner {
+    padding: 30px;
+
+}
+
+.conatiner .cols {
+    display: grid;
+    gap: 10px;
+
+
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.conatiner .cols .row {
+
+    overflow: hidden;
+    box-shadow: #000000fe 0px 2px 4px, rgba(0, 0, 0, 0.839) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: relative;
+
+}
+
+.conatiner .cols .row .heart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+
+.conatiner .cols .row .heart .hearts {
+    background-color: #01010174;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.conatiner .cols .row .heart .hearts:hover {
+    background-color: #000000;
+}
+
+.conatiner .cols .row .heart ion-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: cornsilk;
+
+}
+
+.conatiner .cols .row .heart ion-icon:hover {
+    color: rgb(255, 0, 0);
+
+}
+
+.conatiner .cols .row .head h3 {
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    color: #780000;
+}
+
+.conatiner .cols .row .head h3:hover {
+    color: rgba(0, 0, 0, 0.819);
+}
+
+.conatiner .cols .row .icon {
+    /* background-color: #780000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.conatiner .cols .row .icon h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    margin-left: 2%;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    margin-left: 5px;
+
+}
+
+.conatiner .cols .row .icon h4:hover {
+    color: rgb(252, 0, 0);
+    transition: 0.4s;
+}
+
+.conatiner .cols .row .icon .out {
+    background-color: black;
+    padding: 1px;
+    height: 30px;
+
+    cursor: pointer;
+}
+
+.conatiner .cols .row .icon .out:hover {
+    background-color: rgb(99, 0, 0);
+}
+
+.conatiner .cols .row .icon ion-icon {
+    font-size: 2rem;
+    color: #ffffff;
+
+}
+
+/* @keyframes ss {
+   from{
+    transform: translate(-21px);
+   } 
+} */
+.conatiner .cols .row:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+}
+
+.conatiner .cols .row .img {
+    overflow: hidden;
+
+}
+
+.conatiner .cols .row .img img {
+    width: 100%;
+    height: max-content;
+    transition: 0.5s;
+
+}
+
+.conatiner .cols .row .img img:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.arrow {
+
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+}
+
+
+.arrow .down {
+    border-radius: 30px;
+    padding: 5px;
+    background-color: brown;
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.arrow .down a {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin-left: 1px;
+    margin-top: 4px;
+}
+/*  NEXT-PAGE*/
+#veg .content{
+    background-color: antiquewhite;
+}
+
+@media (max-width:600px) {
+    .main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main nav {
+        position: fixed;
+ 
+        top: 60px;
+        width: 100%;
+        height: 100vh;
+        background-color: #780000;
+        left    : -100%;
+        transition: 0.5s;
+    }
+
+    nav.slide {
+    left: 0;
+        transition: 0.5s;
+    }
+
+    .main nav ul li {
+        display: block;
+        text-align: center;
+
+    }
+
+    .main nav ul li:hover {
+        background-color: #001524;
+    }
+
+    .ham {
+        display: block;
+    }
+    
+      .ser .ser-in {
+         width: 100%;
+        margin-left:100px; 
+    }  
+    .ser .ser-in-in button{
+        display: none;
+    }
+   #login .in{
+    width: 80%;
+   }
+
+}
+/*
+#uu{
+    font-size: 5rem;
+}*/
+#login{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login .in{
+    padding: 30px;
+    background-color: white;
+    min-height: 300px;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: #000000fe 0px 2px 4px, rgba(0, 0, 0, 0.839) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#login .in h1{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-family:monospace;
+    color: skyblue;
+}
+#login .in .input{
+  
+    margin-bottom: 25px;
+    position: relative;
+
+
+}
+#login .in .input input{
+ position: relative;
+ padding: 10px;
+ border-radius: 5px;
+ width: 100%;
+}
+#login .in .input .lab{
+   position: absolute;
+   font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    left: 14px;
+    top:12px;
+    position: absolute;
+    transition: 0.5s;
+    
+}
+#login .in .input input:focus{
+    border: rgb(94, 218, 252) 2px solid;
+}
+#login .in .input input:focus ~ .lab{
+    top:-9px;
+    transition: 0.5s;
+    background-color: white;
+    color: rgb(0, 153, 255);
+  
+}
+#login .in  .input input:not(:focus):valid + .lab{
+    top:-9px;
+    transition: 0.5s;
+    background-color: white;
+    color: rgb(0, 153, 255);
+}
+#login .in form  .btn{
+   text-align: center;
+}
+#login .in form  .btn button{
+    color: black;
+    background-color: #8fadc8;
+    border: none;
+    outline: none;
+    font-size: larger;
+font-family: 'Times New Roman', Times, serif;
+padding: 5px;
+outline: none;
+border-radius: 10px;
+cursor: pointer;
+
+transition: 1s;
+}  
+#login .in form  .btn button:hover{
+  
+    transition: 1s;
+    border: red solid 2px;
+}
+

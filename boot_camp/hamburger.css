@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+   
+    scroll-behavior: smooth;
+}
+
+.main{
+    background-color:/*#341f97*/ black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+.main h2{
+    color: rgb(250, 250, 251);
+    cursor: pointer;
+    margin-left: 5%;
+}
+.main h2:hover{
+    color:#7efff5;
+}
+.main nav li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.main nav li a{
+    color: aliceblue;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+.main nav li a:hover{
+    color:#7efff5;
+    
+    border-bottom: hotpink 3px solid;
+    
+}
+.box{
+    height: 100vh    ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    
+}
+.box:hover{
+    background-image: linear-gradient(to right top, #6bd1cb, #5bccd6, #54c5e0, #5abee7, #6ab5ea, #59baf2, #40bff9, #00c4ff, #00d8fe, #00e9e0, #00f5a9, #5ffb60);
+}
+.box .h{
+background-color: rgba(0, 0, 0, 0.288);
+width: 100%;
+text-align: center;
+height: 40px;
+}
+.box .h h2{
+    line-height:40px ;
+    cursor: pointer;
+    user-select: none;
+}
+.box .h h2 span
+{
+    color: #fff200;
+   font-family:Arial, Helvetica, sans-serif;
+   cursor: pointer;
+    user-select: none;
+    margin: 2px;
+}
+.box button{
+    border :none;
+    outline: none;
+padding: 10px;
+color: black;
+    border-radius: 10px;
+background-color: hotpink;
+margin-top: 30px;
+}
+
+.ham {
+    display: none;
+    margin-right: 5%;
+    cursor: pointer;
+}
+.ham .li{
+    width: 35px;
+    height:4px;
+    background-color:white;
+
+    display: block;
+    margin-bottom: 5px;
+}
+.mobil_nav{
+    background-color: #341f97;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    right: 100%;
+    transition: 0.6s;
+    display: none;
+    z-index: 99;
+}
+.mobil_nav
+    li {
+        color: whitesmoke;
+        display: inline-block;
+        margin: 20px;
+        padding: 20px;
+        display: block;
+        text-align: center;
+       /* background-color: rgb(255, 6, 89);*/
+        width: 100%;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .active .o{
+        transform: rotate(-45deg) translate(-8px,7px);
+    }
+    .active .r{
+        transform: rotate(45deg) translate(-6px,-6px);
+    }
+    .mobil_nav
+    li a{
+        color: white;
+       
+    }
+    .active .u
+    {
+        opacity: 0;
+    }
+    .ii{
+        background-image: linear-gradient(to right top, #f39600, #ff6734, #ff1868, #ff00a7, #db12eb);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .log
+    {
+        background-color:#c8d6e5;
+        height: 380px;
+        width: 300px;
+        display: flex;
+      text-align: center;
+        flex-direction: column;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border-radius: 15px;
+        background-image: linear-gradient(to right bottom, #8200ff, #7000fd, #5c02fc, #4105fa, #0f09f8);
+       
+    }
+    .ii .log .in{
+        margin: 25px;
+       border-radius: 50px;
+        background-color: crimson;
+       
+    }
+    .ii .log .in button{
+      width: 100%;
+      border-radius: 30px;
+      padding: 10px;
+      font-weight: 800;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: white;
+     }
+    .ii .log .input{
+
+margin-bottom: 30px;
+margin-top: 20px;
+
+    }
+    .ii .log .input input{
+    
+        position: relative;
+right: 10px;
+
+border: none;
+outline: none;
+color: whitesmoke;
+width: 245px;
+font-weight: 900;
+font-family: sans-serif;
+padding: 5px;
+background: none;
+letter-spacing: 2px;
+border-bottom: 2px solid darkorange;
+    }
+    .ii .log .input input::placeholder{
+        color: white;
+    }
+    .ii .log .put{
+        margin-bottom: 10px;
+        margin-top: 10px; 
+    }
+    .ii .log .put input{
+            
+        position: relative;
+right: 10px;
+
+border: none;
+outline: none;
+color: whitesmoke;
+width: 245px;
+font-weight: 900;
+font-family: sans-serif;
+padding: 5px;
+background: none;
+letter-spacing: 2px;
+border-bottom: 2px solid darkorange;
+    }
+    .ii .log .put input::placeholder{
+        color: white;
+    }
+    .ii .log .logi{
+        margin: 20px;
+       border-radius: 50px;
+        background-color: crimson;
+       
+    }
+    .ii .log .logi button{
+        width: 100%;
+      border-radius: 30px;
+      padding: 10px;
+      font-weight: 800;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: darkorange;
+    }
+    .ii .log .con{
+        
+        font-family: sans-serif;
+        font-weight: 900;
+    }
+    .ii .log .con span {
+        color: darkorange;
+        cursor: pointer;
+    }
+    .ii .log h5{
+margin-top: 8px;
+    }
+   
+    
+    .con{
+        padding: 20px;
+       
+    }
+    .con{
+        margin: 0 auto;
+        display: grid;
+        
+        grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+       /* gap: 5px;*/
+    /*grid-column-gap: 10px;
+    grid-row-gap: 30px;*
+       /* display: flex;
+        flex-wrap: wrap;*/
+    }
+    .coloumn{
+      
+      /*  width: 20%;*/
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+             overflow: hidden;
+        border-radius: 4px;
+       margin: 10px;
+    }
+    .coloumn .img{
+     
+        overflow: hidden;
+    }
+    .coloumn .img img {
+        width:100% ;
+        transition: 1s;
+        user-select: none;
+    }
+    .coloumn .img img:hover{
+    transform: scale(2);
+    transition: 1s;
+    }
+    .con .coloumn button{
+        margin: 10px;
+        padding: 3px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        border-radius: 2px;
+        background-color: cadetblue;
+        font-family: sans-serif;
+    }
+    .con .coloumn h3{
+        margin-left: 5px;
+    }
+    .con .coloumn .zz{
+        margin: 10px;
+        text-align: justify;
+        text-indent: 50px;
+    }
+    
+    .con .coloumn h4{
+        margin: 10px;
+    }
+    .con .coloumn h4 span{
+        color:darkcyan;
+    }
+    .main h3{
+        margin-left: 10px;
+    }
+    
+@media (max-width:800px)
+{
+    .ham{
+        display: block;
+    }
+  .main  nav{
+        display: none;
+    }
+    .mobil_nav{
+        display: block;
+    }
+    .ii{
+        width:100%;
+    }
+}

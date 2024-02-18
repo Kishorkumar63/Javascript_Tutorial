@@ -1,0 +1,94 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:#5eff00;
+}
+a{
+    text-decoration: none;
+}
+ul{list-style-type: none;}
+header{
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    background-color:#7f8fa6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+ nav ul li{
+  float: left;
+  position: relative;
+ }
+ nav ul li a{
+    padding: 20px;
+  
+    display: block;
+ }
+ nav ul li a:hover{
+    color: #004cff;
+    background-color: #fed330;
+    transition: 1s;
+ }
+ nav ul li ul{
+ 
+    position: absolute;
+text-align: center;
+    background-color: #00fff2;
+    width: 150px;
+  display: none;
+
+ }
+ nav ul li ul li{
+    width: 100%;
+    border-bottom: #7f8fa65e solid 4px;
+ }
+  nav ul li:hover >ul{
+    display: block;
+  }
+  nav ul li:focus-within >ul{
+    display: block;
+  }
+nav ul li ul li ul{
+    left:150px;
+    top:0px;
+    margin-left: 1px;
+}
+  @media (max-width:800px)
+ {
+    nav{
+        position: absolute;
+        background-color: crimson;
+        top:100%;
+        right: 0;
+        left: 0px;
+      display: block;
+      display: none;
+      
+    }
+    nav ul li{
+        width: 100%;
+    }
+    nav ul li ul {
+        position: relative;
+        width: 100%;
+background-color: darkorange;
+    }
+    nav ul li ul li{
+        background-color: lightpink;
+    }
+    nav ul li ul li ul{
+        width: 100%;
+       left: 0; 
+    }
+    #toggle:checked~ nav{
+        display: block;
+    }
+ } 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* MODIFER */
+        let name="kishor kumar";
+        var check=/k/gim;
+        console.log(name.search(check));
+        
+        /* BRACKET */
+        var s2=/[^a]/gi;
+        console.log(name.match(s2));
+        /* METACHARACTER */
+        var number="kishor 67 67 kuamr worst  $# %&()";
+        s3=/or\b/g;
+        console.log(number.match(s3));
+        /*  QUANTIFIERS*/
+        p="9000  899999 45566 5677"
+        s4=/\d{3,}/g;
+    console.log(p.match(s4));
+    oo="kishor kuamr is loss in every thing life";
+    s5=/kis*/ig;
+    console.log(oo.match(s5));
+        </script>
+</body>
+</html>

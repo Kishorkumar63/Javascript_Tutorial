@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamizharasi</title>
+  
+</head>
+<body>
+    <form action="message.html" onsubmit=" return validate()">
+<input type="username" placeholder="username" type="username" id="uname">
+<br><br>
+
+<input type="password" placeholder="password"
+
+type="password" id="pass">
+<br><br>
+
+
+<button onclick="validate()"type="summit">summit</button>
+</form>
+
+
+    <script>
+
+
+function validate()
+{
+    var username=document.getElementById("uname");
+    var password=document.getElementById("pass");
+    if(password.value.trim()=="" || username.value.trim()=="")
+    {
+        alert("not allow to wihout fill");
+        uname.style.border = "solid 3px red";
+        return false;
+       // uname.style.border = "solid 3px red";
+    }
+    else if(password.value.trim().length<5)
+    {
+        alert("password too short");
+        return false;
+    }
+    else
+  {
+
+     true;
+    }
+}
+
+    </script>
+</body>
+</html>

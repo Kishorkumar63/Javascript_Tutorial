@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="01.css">
+    <style>
+      h1{
+        color: blue;
+      } 
+      #deo{
+        color: white;
+      }
+      .container-fluid,.container-md,.container-sm{
+        background-color: black;
+        text-align: center;
+      }
+      .container-md{
+        background-color: black;
+        text-align: center;}
+      .container,.container-lg{
+        background-color: black;
+        text-align: center;
+      }
+       
+    </style>
+</head>
+<body>
+    <div class="container-md" id="oo">
+        <h1>KISHOR KUMAR</h1>
+        <h1 id="deo"></h1>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        window.onresize=function(event){
+            var width=document.getElementById("oo").clientWidth;
+            document.getElementById("deo").innerHTML=width;
+        }
+    </script>
+</body>
+</html>

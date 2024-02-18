@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.con{
+    border: 3px solid rebeccapurple;
+    margin: 30px;
+    height: 600px;
+    display:grid;
+ grid-template: repeat(3,1fr)/repeat(3,1fr);
+justify-content:space-evenly;
+align-items: center;
+
+}
+.li{
+  color: rgb(255, 255, 255);
+  font-size: 2rem;  padding:  16px;
+  text-align:center;
+}
+.box-1{
+    
+    background-color: rgb(241, 3, 3);
+}
+.box-2{
+    background-color: rgb(0, 0, 0);
+}
+.box-3{
+    background-color: rgb(255, 0, 242);
+}
+.box-4{
+    background-color: rgb(255, 225, 0);
+}
+.box-5{
+    background-color: rgb(62, 3, 255);
+}
+.box-6{
+    background-color: rgb(0, 225, 255);
+}
+.box-7{
+    background-color: rgb(0, 255, 26);
+}
+.box-8{
+    background-color: rgb(255, 0, 0);
+}

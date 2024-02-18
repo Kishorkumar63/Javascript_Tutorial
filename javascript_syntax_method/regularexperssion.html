@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="kkek.jpg">
+<input  id="uname"type="text" placeholder="username">
+<label id="ibluser" style="color:red;visibility:hidden">invalid usernamer</label>
+<br><br>
+<button onclick="validate()"type="button">summit</button>
+  </form>
+<script>
+    
+function validate()
+{
+    var username=document.getElementById("uname").value;
+    //var redx=/kkk/g;
+    var redx=/[a-z A-Z]simple/g;
+    if(redx.test(username))
+    {
+        alert("correct username");
+    }
+    else
+    {
+        alert("incorrect username");
+        document.getElementById("ibluser").style.visibility="visible";
+    }
+}
+
+
+
+</script>    
+</body>
+</html>

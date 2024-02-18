@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input id="text1" type="text" placeholder="phonenumber">
+        <label id="lbltext" style="color:red; visibility: hidden">invalid</label>
+        <br><br>
+        <button onclick="validate()" type="button">button</button>
+    </form>
+<script>
+    function validate()
+    {
+        var text=document.getElementById("text1").value;
+        var regx=/[6-9]\d{9}/;
+        if(regx.test(text))
+        {
+        document.getElementById("lbltext").innerhtml="valid";
+        document.getElementById("lbltext").style.visibility="visible";
+        document.getElementById("lbltext").style.color="green";
+        }
+        else
+        {
+            document.getElementById("lbltext").innerhtml="invalid";
+        document.getElementById("lbltext").style.visibility="visible";
+        document.getElementById("lbltext").style.color="red";
+
+        }
+    }
+</script>
+
+
+
+</body>
+</html>

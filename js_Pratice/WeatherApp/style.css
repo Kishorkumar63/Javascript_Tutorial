@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container .row .col{
+    background-color: red;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+.container .row .col form input{
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.container .row .col form input:hover{
+    border: 2px solid rgb(180, 114, 0);
+    transition:0.1s;
+}
+.container .row .col form button{
+    border: none;
+    outline: none;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}

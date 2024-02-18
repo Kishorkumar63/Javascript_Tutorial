@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+background-image: linear-gradient(to top,red,orange);
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.box{
+    background-color: black;
+    margin-left: 20px;
+    text-align: center;
+    padding: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Heading</h1>
+        <div>
+            <h1>SAMPLE TITLE</h1>
+            <P>Lorem ipsum dolor sit amet.</P>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, excepturi.</p>
+        </div>
+        <div>
+            <h2>Sample title 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, eveniet!</p>
+        </div>
+    </section>
+    <script>
+
+        const para=document.getElementsByTagName("p");
+        const div=document.getElementsByTagName("div")[0]
+        const head=document.getElementsByTagName("h1")[1]
+        const pop=head.parentElement;
+    console.log(pop)
+        console.log(para[0]);
+        const parent=para[0].parentNode
+        const parents=para[0].previousElementSibling
+    console.log(parent.style.backgroundColor="pink");
+    console.log(parents.style.backgroundColor="yellow");
+
+    const child=div.children[1]
+    const childs=div.firstElementChild
+    console.log(childs);
+    const childss=div.lastElementChild
+    console.log(childss);
+    console.log(child);
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 22px;
+}
+body{
+    background-color: rgb(51, 51, 231);
+    padding: 1rem;
+}
+.box{
+    height:300px;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+.control{
+    max-width: 1200px;
+    height: 100px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.control .btn-group button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: rgb(1, 255, 170);
+    font-size: 0.7rem;
+    border: 2px solid  rgb(1, 255, 170);
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.control .btn-group button:hover,.control .btn-group .btn-clicked{
+    background-color: rgb(51, 51, 231);
+}
+#Search{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border-radius: 3px;
+    padding:  0 10px;
+}
+.container{
+    max-width: 1220px;
+    margin:  0 auto ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 10px;
+}
+.box img{
+    width: 100%;
+    object-fit: cover;
+}

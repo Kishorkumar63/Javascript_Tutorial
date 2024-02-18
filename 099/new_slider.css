@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.con{
+    position: relative;
+
+}
+.slider{
+    max-width: 700px;
+    height: 400px;
+
+}
+.slider .slider-item img{
+    width: 100%;
+}
+.slider-item,.hidden{
+    display: none;
+}
+.active{
+    display: block;
+}
+.slider-btn
+{
+
+    position: absolute;
+    width: 100%;
+     top: 50%;
+    left: 0%;
+    transform: translate(-50% -50%); 
+    display: flex;
+    justify-content: space-between;
+}
+.slider-btn button{
+
+}

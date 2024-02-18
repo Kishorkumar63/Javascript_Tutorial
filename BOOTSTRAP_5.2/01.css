@@ -1,0 +1,34 @@
+body{
+    margin-top: 70px;
+
+}
+body::before{
+    content:"" ;
+    color: orangered;
+    font-size: 30px;
+    position: fixed;
+    font-weight: bold;
+    left: 20px ;
+    top:20px;
+    text-align: center;
+}
+@media (min-width:576px){
+    body::before{
+        content:"EXTRA SMALL" ;
+    } 
+}
+@media (min-width:768px){
+    body::before{
+        content:" MEDIUM" ;
+    } 
+}
+@media (min-width:992px){
+    body::before{
+        content:" LARGE" ;
+    } 
+}   
+@media (min-width:1200px){
+    body::before{
+        content:" EXTRA LARGE" ;
+    } 
+}

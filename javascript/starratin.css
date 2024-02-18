@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.type{
+    background-color: aliceblue;
+}
+.star{
+    border: none;
+    background-color: unset;
+    color: goldenrod;
+    font-size: 3rem;
+    cursor: pointer;
+    
+}
+p{
+    text-align: center;
+}
+@media (max-width-990px)
+{
+    .type{
+        width:100%;
+    }
+}

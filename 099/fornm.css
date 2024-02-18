@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}/*
+.con{
+    background-color: rgb(191, 0, 0);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con nav ul li{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+
+    
+}
+.con nav ul li a{
+    padding: 20px;
+
+   
+}
+
+
+.con nav ul li a:hover{
+    color: black;
+}
+
+/* .con nav ul li::after{
+    position: absolute;
+    content: '';
+    
+   height: 100%;
+   width: 100%;
+    top: 100%;
+  left: 50%;
+   
+   opacity: 0;
+   transform: translate(-50% ,-50%); 
+    background-color: blanchedalmond;
+    z-index:-1 ;
+    transition: 0.5s;
+} */
+/*
+.con nav ul li::before{
+    position: absolute;
+    content: '';
+    
+   height: 100%;
+   width: 100%;
+    top: -100%;
+  left: -50%;
+   
+   opacity: 0;
+   transform: translate(50% ,50%); 
+    background-color: blanchedalmond;
+    z-index:-1 ;
+    transition: 0.5s;
+}
+
+.con nav ul li:hover::before{
+    opacity: 1;
+    top:100%;
+}*/
+/* .con nav ul li::before{
+    content: '';
+    background-color: azure;
+    height: 3px;
+   display: block;
+    width: 100%;
+ 
+    position: absolute;
+    
+} */
+/* .con nav ul li:hover::after,.con nav ul li:hover::before{
+    opacity: 1;
+} */
+/*
+.ham{
+   display: none;
+}
+.con .ham .li{
+width: 30px;
+height: 3px;
+display: block;
+background-color: aqua;
+margin-top: 5px;
+
+}*/
+/* 
+@media (max-width:800px) {
+   
+    .con .ham{
+        display: block;
+    }
+    .con .nav{
+        position:fixed;
+    top: 60px;
+    left: 0;
+    z-index: 9;
+    height: 100vh;
+    width: 1000%;
+    background-color: aquamarine;    }
+    .con .nav ul li{
+        display: block;
+       background-color: blue;
+       width: 100%;
+       
+       margin: 0;
+    }
+    .con .nav ul{
+        height: 100vh;
+    }
+ 
+    
+} */
+h1{
+    color: pink;
+   font-size: 3rem;
+   position: relative;
+ 
+}
+.h::after{
+    content: '';
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.30s transform ease-in;
+   transform: scale(0);
+    transform-origin: left;
+    background-color: rgb(0, 255, 30);
+}
+.h:hover::after{
+    transform: scale(1);
+    transform-origin:  right;
+}

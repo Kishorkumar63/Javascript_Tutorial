@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.main{
+    background-color: rgb(6, 0, 97);
+    height: 550px;
+    width:350px;
+
+    box-shadow: 20px 20px 20px #333;
+    border-radius: 20px;
+}
+.main .top{
+   
+    width: 100%;
+    background-color: rgb(248, 0, 161);
+    border-top-left-radius: 15px;
+ border-top-right-radius:15px ;
+}
+.main .top .top-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ height: 100px;
+ 
+}
+.main .top .top-in h3{
+    font-family: sans-serif;  
+    transition: 1s ease-in infinite;  
+    animation: kumar;
+}
+@keyframes kumar{
+    form{
+        color:red;
+    }
+    to{
+        color: red;
+    }
+}
+.hh{
+    padding: 15px;
+}
+
+.main .img{
+    width: 40%;
+    box-shadow: 20px 20px 20px #333;
+    border-radius: 50%;
+    position: relative;
+    left: 30%;
+    top:3px;
+    bottom: 20px;
+    
+    
+
+}
+.img .img-in{
+    width: 100%;
+}
+.img .img-in img{
+    width: 100%;
+    border-radius: 50%;
+}
+.main .gv{
+    width: 100%;
+   
+   
+}
+.main  .pp
+{
+
+
+padding: 25px;
+text-align: justify;
+color: white;
+
+}
+.main .post{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.main .post .oo{
+    padding: 10px;
+    font-weight: bolder;
+    color:papayawhip;
+}
+.main .post .oo h3,span{
+
+}
+.main .follow{
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.main .follow{
+    padding: 20px;
+  
+}
+.main .follow button{
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 10px;
+    background-color:blue;
+    color: white;
+    font-weight: bolder;   
+}
+
+ {
+    
+}

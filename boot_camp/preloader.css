@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bo{
+    background-color: cyan;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+   border: 3px purple dotted;
+   border-color: purple transparent rgb(9, 128, 0) transparent;
+    
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    animation: kk linear 2s infinite;
+}
+@keyframes kk{
+    form{
+       transform: rotate(360deg); 
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
